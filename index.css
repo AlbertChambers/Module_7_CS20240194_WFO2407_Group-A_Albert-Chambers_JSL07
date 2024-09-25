@@ -22,7 +22,7 @@ h1 {
 label,
 input {
   display: block;
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
 
 button {
@@ -96,6 +96,7 @@ h1, .modal-content h2, .modal-content p {
 
 .close {
   color: #dc7f5f;
+  cursor: pointer;
 }
 
 /* Adding a fancy border to the certificate content */
@@ -113,3 +114,7 @@ button:hover {
   background-color: #5d5f5e;
 }
 
+img {
+  width:300px;
+  height: 100px;
+}
