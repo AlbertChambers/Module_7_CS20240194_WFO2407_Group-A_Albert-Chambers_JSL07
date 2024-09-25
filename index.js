@@ -1,3 +1,5 @@
+"use strict"
+
 document.addEventListener('DOMContentLoaded', function () {
     const cardForm = document.getElementById('cardForm');
     const modal = document.getElementById('modal');
@@ -8,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.style.display = 'none';
   
     cardForm.addEventListener('submit', function (e) {
-      e.preventDefault();
+      e.preventDefault(); // Stops form from reloading the page.
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
@@ -35,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Clear the form inputs
       studentNameInput.value = '';
       personalMessageInput.value = '';
-      if(courseNameInput) courseNameInput.value = '';
+      if (courseNameInput) courseNameInput.value = '';
     });
   
     //  🚨 Close the modal when the close button is clicked
